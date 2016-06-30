@@ -3,6 +3,7 @@ package com.two95.mar16.srikanth;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -18,6 +19,8 @@ import com.two95.mar16.srikanth.NameEditor;
 
 @Controller
 public class Hotel {
+	@Autowired
+	private CustomerDao customerDao;
 	@InitBinder
 	public void intitbinder(WebDataBinder bind ){
 		//bind.setDisallowedFields(new String[]{"address.country"});
@@ -34,6 +37,7 @@ public class Hotel {
 		 if(result.hasErrors()){
 			 return "hotel";
 		 } 
+		 customerDao.insertCustDetails(custdetails);
 		 return "display";
 	 }
 }

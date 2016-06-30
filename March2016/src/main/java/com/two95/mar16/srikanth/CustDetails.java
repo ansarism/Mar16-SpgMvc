@@ -10,7 +10,7 @@ public class CustDetails {
 	private String mobile;
 	private String email;
 	private Date da;
-	private List<String> roomtype;
+	//private List<String> roomtype;
 	private String sex;
 	public String getSex() {
 		return sex;
@@ -18,20 +18,20 @@ public class CustDetails {
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
-	private Address address;
+	//private Address address;
 	
 	public CustDetails(){
 		  
 	  }
-	public CustDetails(String name, String mobile, String email, Date da, List<String> roomtype,String sex, Address address) {
+	public CustDetails(String name, String mobile, String email, Date da/*, List<String> roomtype*/,String sex/*, Address address*/) {
 		super();
 		this.name = name;
 		this.mobile = mobile;
 		this.email = email;
 		this.da = da;
-		this.setRoomtype (roomtype);
+		//this.setRoomtype (roomtype);
 		this.sex = sex;
-		this.setAddress(address);
+		//this.setAddress(address);
 	}
 	public Date getDa() {
 		return da;
@@ -57,7 +57,7 @@ public class CustDetails {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Address getAddress() {
+	/*public Address getAddress() {
 		return address;
 	}
 	public void setAddress(Address address) {
@@ -68,5 +68,5 @@ public class CustDetails {
 	}
 	public void setRoomtype(List<String> roomtype) {
 		this.roomtype = roomtype;
-	}
+	}*/
 }

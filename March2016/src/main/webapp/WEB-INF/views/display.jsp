@@ -13,9 +13,8 @@
 <tr><td>Mobile : </td><td>${cust.mobile}</td></tr>
 <tr><td>E-mail : </td><td>${cust.email}</td></tr>
 <tr><td>Date of Checkin : </td><td>${cust.da}</td></tr>
-<tr><td>Room Types :</td><td>${cust.roomtype}</td></tr>
 <tr><td>Gender :</td><td>${cust.sex}</td></tr>
-<tr><td>Address : </td><td>${cust.address}</td></tr>
+
 </table>
 </body>
 </html>
